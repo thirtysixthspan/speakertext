@@ -28,7 +28,7 @@ Usage Examples
 
 Install
 
-    gem install speakertext
+    gem install speaker_text
 
 Initialize the API with a key
 
