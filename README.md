@@ -26,8 +26,13 @@ Requires
 Usage Examples
 --------------
 
+Install
+
+    gem install speakertext
+
 Initialize the API with a key
 
+    require 'speaker_text'
     st = SpeakerText.new(your_api_key)
 
 Submit a media file URL for transcription
