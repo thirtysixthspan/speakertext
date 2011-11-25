@@ -24,8 +24,8 @@ if !config.include?('api_key') || config['api_key']==''
 end
 
 st = SpeakerText.new(config['api_key'])
-status, transcript_id = st.transcribe(platform: 'youtube', id: video_id);
-if status
+success, transcript_id = st.transcribe(platform: 'youtube', id: video_id)
+if success
   puts "Success: Transcript ID is #{transcript_id}"
 else
   puts "Error: #{transcript_id}"

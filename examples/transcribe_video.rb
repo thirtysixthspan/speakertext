@@ -24,7 +24,7 @@ if !config.include?('api_key') || config['api_key']==''
 end
 
 st = SpeakerText.new(config['api_key'])
-success, transcript_id = st.transcribe(url: url);
+success, transcript_id = st.transcribe(url: url)
 if success
   puts "Success: Transcript ID is #{transcript_id}"
 else

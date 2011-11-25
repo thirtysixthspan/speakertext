@@ -24,7 +24,7 @@ if !config.include?('api_key') || config['api_key']==''
 end
 
 st = SpeakerText.new(config['api_key'])
-success, content = st.fetch_xml_transcript(id: id);
+success, content = st.fetch_xml_transcript(id: id)
 if success
   filename = "#{id}.xml"
   File.open(filename, 'w') do |file|

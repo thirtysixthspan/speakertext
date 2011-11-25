@@ -41,7 +41,7 @@ Submit a media file URL for transcription
 
 Submit a media file hosted on a platform (e.g., YouTube, Vimeo, SoundCloud)
 
-    status, transcript_id = st.transcribe(platform: 'youtube', id: youtube_video_id)
+    success, transcript_id = st.transcribe(platform: 'youtube', id: youtube_video_id)
 
 Check the status of the transcription process
 
