@@ -5,7 +5,7 @@ require 'json'
 class SpeakerText
   include HTTParty
   base_uri "https://api.speakertext.com/v1"
-  VERSION = '1.0.0'
+  VERSION = '1.0.1'
   
   def initialize(api_key)
     self.class.basic_auth api_key,'x' 
