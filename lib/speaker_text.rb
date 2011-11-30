@@ -5,7 +5,7 @@ require 'json'
 class SpeakerText
   include HTTParty
   base_uri "https://api.speakertext.com/v1"
-  VERSION = '1.0.2'
+  VERSION = '1.0.3'
   
   def initialize(api_key)
     self.class.basic_auth api_key,'x' 
@@ -120,6 +120,11 @@ class SpeakerText
 
   def fetch_html_transcript(args)
     args.merge!(format: 'html')
+    transcript(args)
+  end
+
+  def fetch_dfxp_transcript(args)
+    args.merge!(format: 'dfxp')
     transcript(args)
   end
 
