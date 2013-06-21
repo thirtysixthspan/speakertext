@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = 'speaker_text'
   s.version     = SpeakerText::VERSION
   s.date        = '2011-11-24'
-  s.homepage    = 'http://github.com/thritysixthspan/speakertext'
+  s.homepage    = 'http://github.com/thirtysixthspan/speakertext'
   s.summary     = 'SpeakerText API Wrapper Gem'
   s.description = 'A gem to automate transcription of audio and video media using the SpeakerText.com service.'
   s.authors     = ['Derrick Parkhurst']
